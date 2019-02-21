@@ -122,9 +122,14 @@ int main(){
 			Lsearch(A,data);
 			break;
 			case 3:
+			input='y';
 			while(input=='y'||input=='Y'){
 			if(size==a){
                 		growA(A);
+				for(int i=a/2;i<a;i++){
+           				A[i]=0;
+        			}
+
        			 }
 			Input(A);
 			printf("Do you want to add more(y/n): ");
